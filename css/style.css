@@ -8,7 +8,7 @@ html{
 body{
     font-family: "Zen Maru Gothic",sans-serif;;
     line-height: 1.7;
-    color: #000;
+    color: #000000;
     margin: 0;
 }
 a{
@@ -123,7 +123,7 @@ img{
 
 .cover-news{
     background-color: #FAF7EF;
-    background-image: url(../images/cover-news-s.webp);
+    background-image: url(../images/fv_main_S.webp);
 }
     /* 記事部分 */
 .post{
@@ -259,7 +259,7 @@ img{
 
 
     .cover-news{
-        background-image: url(../images/cover-news-l.webp);
+        background-image: url(../images/fv_main_L.webp);
     }
     .news-contents,.menu-contents{
         display: flex;
