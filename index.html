@@ -24,7 +24,7 @@
 
         <!-- オリジナルCSS -->
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js"></script>
+        <script src="js/script.js" defer></script>
     </head>
 
     <body>
@@ -38,24 +38,31 @@
                     <ul class="main-nav">
                         <li><a href="#">訪問介護</a></li>
                         <li><a href="#">就労移行</a></li>
-                        <li><a href="#">A型作業所</a></li>
+                        <li><a href="#">B型作業所</a></li>
                         <li><a href="#">お問い合わせ</a></li>
                     </ul>
                 </nav>
                 <!-- スマホ時のメニュー -->
-<!--                 <button class="hamburger" aria-label="メニューを開く">
-                    ☰
-                </button>
-
-                <nav class="mobile-nav">
-                    <a href="#">訪問介護</a>
-                    <a href="#">就労移行</a>
-                    <a href="#">Ｂ型作業所</a>
-                    <a href="#">お問い合わせ</a>
-                </nav> -->
+                <div class="mobile-header">
+                    <div class="hmb">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="mobile-nav">
+                        <ul>
+                            <li><a href="#">&nbsp;訪問介護　　　</a></li>
+                            <li><a href="#">&nbsp;就労移行　　　</a></li>
+                            <li><a href="#">&nbsp;B型作業所 　　</a></li>
+                            <li><a href="#">&nbsp;お問い合わせ　</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
-            <div class="sub-cover cover-news">
-                <h2 class="page-title font-english">News</h2>
+
+            <div class="fv-cover">
+                <h2 class="page-title">News</h2>
+
             </div>
             <main class="wrapper news-contents">
                 <article class="post">
