@@ -6,3 +6,24 @@ hmbBtn.addEventListener("click", function() {
   mobileNav.classList.toggle("active");
   console.log(1);
 });
+
+const allSwiper = new Swiper('.all-swiper', {
+  loop: true,
+
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+
+  speed: 600,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});

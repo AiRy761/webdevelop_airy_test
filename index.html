@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WCB Cafe - NEWS</title>
+        <title>Rahaia総合福祉サービス</title>
         <meta name="description" content="〇〇県を中心に様々な福祉サービスを展開、一人ひとりが自分らしく暮らし、働ける地域社会づくりを目指す総合福祉企業">
 
         <!-- ファビコン -->
@@ -11,6 +11,11 @@
 
         <!-- リセットCSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        
+        <!-- SwiperCSS -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
         <!-- Googleフォント和文 -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,99 +29,127 @@
 
         <!-- オリジナルCSS -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- Swiper本体 -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+        <!-- オリジナルJS -->
         <script src="js/script.js" defer></script>
     </head>
 
     <body>
         <div>
-            <header class="page-header wrapper">
-                <h1 class="align-left">
-                    <a href="index.html"><img class="logo" src=images/logo.svg alt="Rahaia総合福祉サービス"></a>            
-                </h1>
-                <!-- PC時のメニュー -->
-                <nav>
-                    <ul class="main-nav">
-                        <li><a href="#">訪問介護</a></li>
-                        <li><a href="#">就労移行</a></li>
-                        <li><a href="#">B型作業所</a></li>
-                        <li><a href="#">お問い合わせ</a></li>
-                    </ul>
-                </nav>
-                <!-- スマホ時のメニュー -->
-                <div class="mobile-header">
-                    <div class="hmb">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <nav class="mobile-nav">
-                        <ul>
-                            <li><a href="#">&nbsp;訪問介護　　　</a></li>
-                            <li><a href="#">&nbsp;就労移行　　　</a></li>
-                            <li><a href="#">&nbsp;B型作業所 　　</a></li>
-                            <li><a href="#">&nbsp;お問い合わせ　</a></li>
+            <header class="page-header">
+                <div class="page-header-contents wrapper">
+                    <h1 class="align-left">
+                        <a href="index.html"><img class="logo" src=images/logo.svg alt="Rahaia総合福祉サービス"></a>            
+                    </h1>
+                    <!-- PC時のメニュー -->
+                    <nav>
+                        <ul class="main-nav">
+                            <li><a href="#">訪問介護</a></li>
+                            <li><a href="#">就労移行</a></li>
+                            <li><a href="#">B型作業所</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
                         </ul>
                     </nav>
+                    <!-- スマホ時のメニュー -->
+                    <div class="mobile-header">
+                        <div class="hmb">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <nav class="mobile-nav">
+                            <ul>
+                                <li><a href="#">&nbsp;訪問介護&emsp;&emsp;&emsp;</a></li>
+                                <li><a href="#">&nbsp;就労移行&emsp;&emsp;&emsp;</a></li>
+                                <li><a href="#">&nbsp;B型作業所&nbsp;&emsp;&emsp;</a></li>
+                                <li><a href="#">&nbsp;お問い合わせ&emsp;</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </header>
 
             <div class="fv-cover">
-                <h2 class="page-title">News</h2>
+                <div class="anime-img"></div>
+                <h1 class="page-title">今の時代にこそ笑い合える場所を</h1>
+                <p class="wrapper page-overview">IT技術のめざましい発展により人が行わなくてもよいことはどんどん増えていってます。<br>
+                そんな時代だからこそ技術と人の両方に向き合い本当の意味で快適な居場所を提供することがわれわれの使命です。
+                </p>
+            </div>
+            <div class="news-title">
+                    <h2 class="heading-large">&emsp;&emsp;お知らせ&emsp;&emsp;</h2>
+                    <h3 class="font-english">news</h3>
+            </div>
+            <div class="swiper all-swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/news_slide_A_S.webp" media="(max-width: 800px)">
+                        <img src="images/news_slide_A_L.webp" alt="ニューススライド1">
+                    </picture>
+                    </div>
+
+                    <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/news_slide_B_S.webp" media="(max-width: 800px)">
+                        <img src="images/news_slide_B_L.webp" alt="ニューススライド2">
+                    </picture>
+                    </div>
+
+                    <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/news_slide_C_S.webp" media="(max-width: 800px)">
+                        <img src="images/news_slide_C_L.webp" alt="ニューススライド3">
+                    </picture>
+                    </div>
+
+                    <div class="swiper-slide">
+                    <picture>
+                        <source srcset="images/news_slide_D_S.webp" media="(max-width: 800px)">
+                        <img src="images/news_slide_D_L.webp" alt="ニューススライド4">
+                    </picture>
+                    </div>
+
+                </div>
+
+                <!-- 矢印ボタン -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- 下の丸いページ送り -->
+                <div class="swiper-pagination"></div>
 
             </div>
-            <main class="wrapper news-contents">
-                <article class="post">
-                    <header>
-                        <h2 class="post-title">新メニューの試食イベントを開催します</h2>
-                        <div class="post-info">
-                            <ul class="post-cat">
-                                <li><a href="#">お店の紹介</a></li>
-                                <li><a href="#">イベント</a></li>
-                            </ul>
-                            <!-- ここがGoogleに反映されるので更新日を記載する -->
-                            <time class="post-date" datetime="2026-05-11">更新-2026年5月11日</time>
-                        </div>
-                    </header>
-                    <div class="post-top-news">
-                        <img class="post-thumbnail" src="images/fv_main_L.webp" alt="店内の様子">
-                        <p>
-                            これまでにない美味しいフードやドリンクを提供するため、チーム一丸となって新メニューの開発に取り組んできました。
-                            皆様に喜んでいただけるよう、自信を持ってご紹介できるメニューとなっております。<br>
-                            <br>
-                            当日は、新しいメニューの一部を試食していただけます。<br>
-                            <br>
-                            新鮮な食材を使った料理や、自慢の特製ドリンクをご用意しておりますので、ぜひお越しください。
-                            また、試食会に参加していただいた方には、アンケートにご協力いただけるようお願いする予定です。
-                            皆様の貴重なご意見をいただき、より良いメニュー作りに生かしていきたいと思います。<br>
-                            <br>
-                            日時：10月7日（土）11時から12時まで<br>
-                            場所：カフェ内イベントスペース<br>
-                            <br>
-                            定員に達した場合、お断りさせていただくこともございますので、お早めにお申し込みください。
-                            試食会でお会いできることを心から楽しみにしております！<br>
-                        </p>
-                    </div>
-                </article>
-                <aside class="sidebar">
-                    <h3 class="heading-medium font font-english">Category</h3>
-                    <ul class="side-menu">
-                        <li><a href="temp.html">お店の紹介</a></li>
-                        <li><a href="temp.html">期間限定メニュー</a></li>
-                        <li><a href="temp.html">イベント</a></li>
-                        <li><a href="temp.html">お客様との会話</a></li>
-                    </ul>
-
-                    <h3 class="heading-medium font font-english">Archives</h3>
-                    <ul class="side-menu">
-                        <li><a href="temp.html">2026年</a></li>
-                        <li><a href="temp.html">2025年</a></li>
-                        <li><a href="temp.html">2024年</a></li>
-                        <li><a href="temp.html">2023年</a></li>
-                    </ul>
-                </aside>
-
-            </main>
+            <aside class="news-menu wrapper">
+                <ul class="news-item">
+                    <li><a href="#"><time class="news-date" datetime="2026-05-27">
+                        2026.05.27</time>
+                        ○○事業所、開設のお知らせ</a></li>
+                    <li><a href="#"><time class="news-date" datetime="2026-04-23">
+                        2026.04.23</time>
+                        5月開催イベントのご紹介</a></li>
+                    <li><a href="#"><time class="news-date" datetime="2026-04-15">
+                        2026.04.15</time>
+                        提携医療機関のご紹介（最新版）</a></li>
+                    <li><a href="#"><time class="news-date" datetime="2026-03-18">
+                        2026.03.18</time>
+                        「訪問介護お弁当メニュー」リニューアル</a></li>
+                </ul>
+                <div class="align-center">
+                    <a class="btn" href="#">お知らせ一覧へ</a>
+                </div>
+            </aside>
         </div>
+        <main class="news-contents">
+            <article class="post wrapper">
+                <div class="post-top-news">
+                    <img class="post-thumbnail" src="images/fv_main_L.webp" alt="店内の様子">
+                </div>
+            </article>
+        </main>
 
         <footer class="page-footer">
             <div class="footer-item wrapper-footer">
