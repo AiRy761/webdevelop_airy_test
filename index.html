@@ -36,7 +36,7 @@
     </head>
 
     <body>
-        <div>
+        <div> <!-- ヘッダー追従用 -->
             <header class="page-header">
                 <div class="page-header-contents wrapper">
                     <h1 class="align-left">
@@ -81,67 +81,57 @@
                     <h2 class="heading-large">&emsp;&emsp;お知らせ&emsp;&emsp;</h2>
                     <h3 class="font-english">news</h3>
             </div>
-            <div class="swiper all-swiper">
+            <aside class="news wrapper">
+                <div class="swiper all-swiper">
 
-                <div class="swiper-wrapper">
+                    <div class="swiper-wrapper">
 
-                    <div class="swiper-slide">
-                    <picture>
-                        <source srcset="images/news_slide_A_S.webp" media="(max-width: 800px)">
-                        <img src="images/news_slide_A_L.webp" alt="ニューススライド1">
-                    </picture>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/news_slide_A_L.webp" alt="ニューススライド1"></a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/news_slide_B_L.webp" alt="ニューススライド2"></a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/news_slide_C_L.webp" alt="ニューススライド3"></a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/news_slide_D_L.webp" alt="ニューススライド4"></a>
+                        </div>
+
                     </div>
 
-                    <div class="swiper-slide">
-                    <picture>
-                        <source srcset="images/news_slide_B_S.webp" media="(max-width: 800px)">
-                        <img src="images/news_slide_B_L.webp" alt="ニューススライド2">
-                    </picture>
-                    </div>
+                    <!-- 矢印ボタン -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
-                    <div class="swiper-slide">
-                    <picture>
-                        <source srcset="images/news_slide_C_S.webp" media="(max-width: 800px)">
-                        <img src="images/news_slide_C_L.webp" alt="ニューススライド3">
-                    </picture>
-                    </div>
-
-                    <div class="swiper-slide">
-                    <picture>
-                        <source srcset="images/news_slide_D_S.webp" media="(max-width: 800px)">
-                        <img src="images/news_slide_D_L.webp" alt="ニューススライド4">
-                    </picture>
-                    </div>
+                    <!-- 下の丸いページ送り -->
+                    <div class="swiper-pagination"></div>
 
                 </div>
-
-                <!-- 矢印ボタン -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- 下の丸いページ送り -->
-                <div class="swiper-pagination"></div>
-
-            </div>
-            <aside class="news-menu wrapper">
-                <ul class="news-item">
-                    <li><a href="#"><time class="news-date" datetime="2026-05-27">
-                        2026.05.27</time>
-                        ○○事業所、開設のお知らせ</a></li>
-                    <li><a href="#"><time class="news-date" datetime="2026-04-23">
-                        2026.04.23</time>
-                        5月開催イベントのご紹介</a></li>
-                    <li><a href="#"><time class="news-date" datetime="2026-04-15">
-                        2026.04.15</time>
-                        提携医療機関のご紹介（最新版）</a></li>
-                    <li><a href="#"><time class="news-date" datetime="2026-03-18">
-                        2026.03.18</time>
-                        「訪問介護お弁当メニュー」リニューアル</a></li>
-                </ul>
-                <div class="align-center">
-                    <a class="btn" href="#">お知らせ一覧へ</a>
+                <div  class="news-menu">
+                    <ul class="news-item">
+                        <li><a href="#"><time class="news-date" datetime="2026-05-27">
+                            2026.05.27</time>
+                            ○○事業所、開設のお知らせ</a></li>
+                        <li><a href="#"><time class="news-date" datetime="2026-04-23">
+                            2026.04.23</time>
+                            5月開催イベントのご紹介</a></li>
+                        <li><a href="#"><time class="news-date" datetime="2026-04-15">
+                            2026.04.15</time>
+                            提携医療機関のご紹介（最新版）</a></li>
+                        <li><a href="#"><time class="news-date" datetime="2026-03-18">
+                            2026.03.18</time>
+                            「訪問介護お弁当メニュー」リニューアル</a></li>
+                    </ul>
                 </div>
             </aside>
+            <div class="align-center">
+                <a class="btn" href="#">お知らせ一覧へ</a>
+            </div>
         </div>
         <main class="news-contents">
             <article class="post wrapper">

@@ -44,7 +44,7 @@ img{
 .page-title{    
     text-align: center;
     width: fit-content;
-    margin: 1rem auto 0;
+    margin: 2rem auto;
     padding: 0.4rem 1.5rem;
     
     font-size: 1.5rem;
@@ -73,6 +73,7 @@ img{
 }
 .news-title{
     text-align: center;
+    margin: 2rem auto 1rem;
 }
 
 
@@ -284,19 +285,14 @@ img{
     overflow: hidden;
     display: flex;
     justify-content: center;
-    
-}
-.swiper-slide picture {
-    display: block;
-    width: 80%;
-    height:auto;
 }
 
-.swiper-slide img {
+.swiper-slide a {
     display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    margin-top: 1rem auto;
+    width: 80%;
+    height:80%;
+
 }
 
 /* 矢印の色 */
