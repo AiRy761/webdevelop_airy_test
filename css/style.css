@@ -47,7 +47,7 @@ img{
     margin: 2rem auto;
     padding: 0.4rem 1.5rem;
     
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #ffffff;
     background-color: #231b00;
     border-radius: 0.7rem;
@@ -73,7 +73,7 @@ img{
 }
 .news-title{
     text-align: center;
-    margin: 2rem auto 1rem;
+    margin: 6rem auto 1rem;
 }
 
 
@@ -278,7 +278,7 @@ img{
 
 .all-swiper {
     width: 100%;
-    height: 350px;
+    height: 15rem;
 }
 
 .swiper-slide {
@@ -395,7 +395,7 @@ img{
     white-space: nowrap;
 }
 .info th{
-    padding: 0.5rem;
+    padding: 0.25rem;
 }
 .info a{
     font-weight: 100;
