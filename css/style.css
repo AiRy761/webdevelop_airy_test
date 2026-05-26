@@ -45,7 +45,7 @@ img{
     text-align: center;
 }
 .heading-medium{
-    font-size: 2rem;
+    font-size: 1.25rem;
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 0.4rem;
@@ -98,6 +98,8 @@ img{
 
 .logo{
     width: 200px;
+    max-width: 100%;
+    height: auto;
     order: 1;
 }
 
@@ -302,6 +304,9 @@ img{
     background-position: top;
     padding-top: 1rem;
 }
+.footer-overview{
+    font-size: 0.65rem;
+}
     /* 文章 */
 .footer-item h3, .footer-item th{
     text-align: left;
@@ -314,6 +319,9 @@ img{
 }
 .info1, .info2{
     border-left: 1.5px solid #000;        /* 誘導線横 */
+}
+.info1 th{
+    white-space: nowrap;
 }
 .info th{
     padding: 0.5rem;
@@ -333,7 +341,9 @@ img{
 /* デスクトップ版 */
 @media (min-width: 800px){
 
-    
+    .heading-medium{
+        font-size: 2rem;
+    }
     /* ヘッダー */
     .mobile-header{
         display: none;
@@ -397,6 +407,9 @@ img{
     }
     .wrapper-footer{
         max-width: 1000px;
+    }
+    .footer-overview{
+        font-size: 1rem;
     }
     .footer-item{
         display: flex;
