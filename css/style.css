@@ -75,7 +75,10 @@ img{
     text-align: center;
     margin: 6rem auto 1rem;
 }
-
+.main-title{
+    text-align: center;
+    margin: 3rem auto 1rem;
+}
 
 /* 英文 */
 .font-english{
@@ -240,14 +243,14 @@ img{
 /* FV設定 */
 .fv-cover{
     top: 0;
-    height: 675px;
+    height: auto;
 }
 .anime-img{
     background-color: white;
     background-image: url(../images/fv_main_L.webp);
     background-size: cover;
     background-position: top;
-    width: 100vw;
+    width: auto;
     height: 400px;
     z-index: 1;
 }
@@ -276,18 +279,37 @@ img{
     /* スライダー */
 
 
-.all-swiper {
+.news-swiper {
     width: 100%;
-    height: 15rem;
+    height: 13.5rem;
+}
+.main-swiper {
+    width: 100%;
+    height: 19rem;
 }
 
-.swiper-slide {
+
+.swiper-slide-news {
     overflow: hidden;
     display: flex;
     justify-content: center;
 }
 
-.swiper-slide a {
+.swiper-slide-news a {
+    display: block;
+    margin-top: 1rem auto;
+    width: 80%;
+    height:80%;
+
+}
+
+.swiper-slide-main {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide-main a {
     display: block;
     margin-top: 1rem auto;
     width: 80%;
@@ -320,29 +342,19 @@ img{
     opacity: 1;
 }
 
-    /* 記事部分 */
-.post{
-    margin-bottom: 3rem;
+    /* メイン部分 */
+.main-contents{
+    background-image: url(../images/main_Liquid_S.svg);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 30rem;
+    display: inline-block;
+    margin-bottom: 5rem;
+    justify-content: center;
+    text-align: center;
 }
-.post-info{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-.post-date{
-    font-size: .5rem;
-    color: #8a8a8a;
-}
-.post-thumbnail{
-    border-radius: 16px;
-    margin-bottom: 1.5rem;
-}
-.post p{
-    margin-bottom: 1.5rem;
-    line-height: 2;
-    text-align: justify;
-    margin-bottom: 2rem;
-}
+
     /* ニュース一覧 */
 .news-item{
     list-style: none;
